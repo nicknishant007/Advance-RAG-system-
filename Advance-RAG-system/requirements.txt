@@ -1,0 +1,11 @@
+pymupdf
+python-docx
+python-pptx
+pandas
+openpyxl
+pillow
+pytesseract
+beautifulsoup4
+langchain
+tqdm
+pyyaml

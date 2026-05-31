@@ -1,0 +1,21 @@
+data_dir: "data/incoming"
+
+supported_extensions:
+  - ".pdf"
+  - ".docx"
+  - ".pptx"
+  - ".xlsx"
+  - ".csv"
+  - ".txt"
+  - ".png"
+  - ".jpg"
+  - ".jpeg"
+  - ".html"
+  - ".json"
+
+chunking:
+  chunk_size: 600
+  chunk_overlap: 150
+
+workers:
+  max_workers: 4
