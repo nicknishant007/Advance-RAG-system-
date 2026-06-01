@@ -1,4 +1,4 @@
-from langchain_community.document_loaders.pdf import PyMuPDFLoader
+from langchain.document_loaders import PyMuPDFLoader
 
 
 def load_pdf(file_path: str) -> str:
