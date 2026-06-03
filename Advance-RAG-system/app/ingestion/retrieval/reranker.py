@@ -22,7 +22,7 @@ class Reranker:
         cls,
         query,
         chunks,
-        top_k=5
+        top_k=6
     ):
 
         cls.load_model()

@@ -17,10 +17,10 @@ class LLM:
         if cls._llm is None:
 
             cls._llm = init_chat_model(
-                model="mistral-large-latest",
-                model_provider="mistralai",
-                temperature=0.4,
-                max_tokens=2048,
+                model="gemini-2.5-flash",
+                model_provider="google_genai",
+                temperature=0.2,
+                max_tokens=3000,
                 max_retries=3,
                 timeout=30,
                 streaming=True

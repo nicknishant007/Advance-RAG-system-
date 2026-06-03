@@ -27,7 +27,10 @@ class BM25Indexer:
         self.bm25 = None
 
         self.storage_path = (
-            BASE_DIR / "storage" / "bm25" / "bm25_store.pkl"
+            BASE_DIR
+            / "storage"
+            / "bm25"
+            / "bm25_store.pkl"
         )
 
         os.makedirs(
@@ -37,7 +40,10 @@ class BM25Indexer:
 
         self.load()
 
-    def add_documents(self, chunks):
+    def add_documents(
+        self,
+        chunks
+    ):
 
         texts = []
 
@@ -47,7 +53,6 @@ class BM25Indexer:
 
             text = chunk.page_content.strip()
 
-            # skip empty chunks
             if not text:
                 continue
 
@@ -55,12 +60,11 @@ class BM25Indexer:
 
             valid_chunks.append(chunk)
 
-    # no valid text
         if not texts:
             return
 
         self.documents.extend(
-        valid_chunks
+            valid_chunks
         )
 
         tokenized = [
@@ -69,27 +73,25 @@ class BM25Indexer:
 
             for text in texts
 
-            if text.strip()
-    ]
+        ]
 
-        # no valid tokens
         if not tokenized:
             return
 
         self.tokenized_docs.extend(
             tokenized
-    )
+        )
 
         self.bm25 = BM25Okapi(
             self.tokenized_docs
-    )
+        )
 
         self.save()
 
     def search(
         self,
         query,
-        top_k=10
+        top_k=7
     ):
 
         if self.bm25 is None:
@@ -104,7 +106,10 @@ class BM25Indexer:
         )
 
         ranked = sorted(
-            zip(self.documents, scores),
+            zip(
+                self.documents,
+                scores
+            ),
             key=lambda x: x[1],
             reverse=True
         )
@@ -114,6 +119,7 @@ class BM25Indexer:
             chunk
 
             for chunk, _ in ranked[:top_k]
+
         ]
 
     def save(self):
@@ -123,6 +129,7 @@ class BM25Indexer:
             "documents": self.documents,
 
             "tokenized_docs": self.tokenized_docs
+
         }
 
         with open(
@@ -156,13 +163,15 @@ class BM25Indexer:
 
                 data = pickle.load(f)
 
-            self.documents = data[
-                "documents"
-            ]
+            self.documents = data.get(
+                "documents",
+                []
+            )
 
-            self.tokenized_docs = data[
-                "tokenized_docs"
-            ]
+            self.tokenized_docs = data.get(
+                "tokenized_docs",
+                []
+            )
 
             if self.tokenized_docs:
 

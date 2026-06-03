@@ -1,4 +1,3 @@
-
 import numpy as np
 
 from sklearn.metrics.pairwise import (
@@ -13,9 +12,22 @@ class MMRRetriever:
         query_embedding,
         candidate_embeddings,
         candidate_chunks,
-        top_k=10,
+        top_k=8,
         lambda_param=0.7
     ):
+
+        if not candidate_chunks:
+            return []
+
+        if len(candidate_chunks) != len(
+            candidate_embeddings
+        ):
+
+            raise ValueError(
+                f"MMR Error: "
+                f"{len(candidate_chunks)} chunks but "
+                f"{len(candidate_embeddings)} embeddings"
+            )
 
         selected_indices = []
 
@@ -40,11 +52,15 @@ class MMRRetriever:
         ):
 
             remaining_indices = [
+
                 idx
+
                 for idx in range(
                     len(candidate_chunks)
                 )
+
                 if idx not in selected_indices
+
             ]
 
             mmr_scores = []
@@ -86,6 +102,9 @@ class MMRRetriever:
             )
 
         return [
+
             candidate_chunks[idx]
+
             for idx in selected_indices
+
         ]

@@ -96,7 +96,7 @@ class QdrantManager:
             query=query_vector.tolist(),
             limit=top_k,
             with_payload=True,
-            with_vectors=False
+            with_vectors=True
         )
         return response.points
     
