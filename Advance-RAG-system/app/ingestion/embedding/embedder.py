@@ -12,7 +12,8 @@ class Embedder:
 
             cls._model = SentenceTransformer(
                 "BAAI/bge-small-en-v1.5",
-                device="cpu"
+                device="cpu",
+                cache_folder="storage/model_cache"
             )
 
     @classmethod

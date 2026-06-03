@@ -3,8 +3,7 @@ from app.ingestion.retrieval.retrieval_pipeline import (
 )
 
 from app.generation.response_generator import (
-    ResponseGenerator
-)
+    ResponseGenerator)
 
 
 class RAGPipeline:

@@ -45,6 +45,8 @@ class Worker:
     @staticmethod
     def process(file_path):
 
+        print(f"\nProcessing File: {file_path}")
+
         file_hash = generate_file_hash(
             file_path
         )
@@ -61,6 +63,8 @@ class Worker:
             file_path
         )
 
+        print(f"Raw text length: {len(raw_text)}")
+
         cleaned_text = TextCleaner.clean(
             raw_text
         )
@@ -74,31 +78,41 @@ class Worker:
             metadata
         )
 
-        texts=[chunk.page_content
-               for chunk in chunks]
+        print(f"Chunks created: {len(chunks)}")
+
+        texts = [
+            chunk.page_content
+            for chunk in chunks
+        ]
+
         embeddings = Embedder.embed(
             texts
         )
+
+        print(f"Embeddings created: {len(embeddings)}")
+
         ids = [
             str(uuid.uuid4())
             for _ in chunks
-         ]
+        ]
+
         qdrant.store_documents(
             ids,
             embeddings,
             chunks
         )
 
+        print(f"Stored in Qdrant: {len(ids)} vectors")
+
         bm25_index.add_documents(
             chunks
         )
 
-
         RegistryManager.mark_processed(
-            file_hash,
-            file_path
+            file_path,
+            file_hash
         )
 
-        print(f"Processed: {file_path}")
+        print(f"Processed Successfully: {file_path}")
 
         return chunks

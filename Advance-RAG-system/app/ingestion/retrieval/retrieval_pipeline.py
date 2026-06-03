@@ -1,7 +1,7 @@
 
-from langchain.schema import Document
+from langchain_core.documents import (Document)
 
-from app.ingestion.retrieval.hybrid_retriever import (
+from app.ingestion.retrieval.hybrid_retrieval import (
     HybridRetriever
 )
 
@@ -11,6 +11,9 @@ from app.ingestion.retrieval.mmr import (
 
 from app.ingestion.retrieval.reranker import (
     Reranker
+)
+from app.ingestion.embedding.embedder import (
+    Embedder
 )
 
 
@@ -30,12 +33,15 @@ class RetrievalPipeline:
             query_embedding,
             dense_results,
             sparse_results
-        ) = self.retriever.retrieve(query)
+        ) = self.retriever.semantic_search(query)
 
         candidates = []
 
         candidate_embeddings = []
 
+        seen = set()
+
+        # Dense Retrieval Results
         for result in dense_results:
 
             text = result.payload["text"]
@@ -44,24 +50,23 @@ class RetrievalPipeline:
                 "metadata"
             ]
 
-            candidates.append(
-                Document(
-                    page_content=text,
-                    metadata=metadata
+            if text not in seen:
+
+                seen.add(text)
+
+                candidates.append(
+                    Document(
+                        page_content=text,
+                        metadata=metadata
+                    )
                 )
-            )
 
-            candidate_embeddings.append(
-                result.vector
-            )
+                candidate_embeddings.append(
+                    result.vector
+                )
 
-        candidates.extend(sparse_results)
-
-        unique_candidates = []
-
-        seen = set()
-
-        for chunk in candidates:
+        # Sparse Retrieval Results
+        for chunk in sparse_results:
 
             if chunk.page_content not in seen:
 
@@ -69,14 +74,20 @@ class RetrievalPipeline:
                     chunk.page_content
                 )
 
-                unique_candidates.append(
-                    chunk
+                candidates.append(chunk)
+
+                sparse_embedding = Embedder.embed(
+                    [chunk.page_content]
+                )[0]
+
+                candidate_embeddings.append(
+                    sparse_embedding
                 )
 
         mmr_chunks = MMRRetriever.rerank(
             query_embedding=query_embedding,
             candidate_embeddings=candidate_embeddings,
-            candidate_chunks=unique_candidates,
+            candidate_chunks=candidates,
             top_k=10
         )
 

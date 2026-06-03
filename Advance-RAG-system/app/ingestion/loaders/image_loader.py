@@ -1,4 +1,4 @@
-from app.ingestion.orc.tesseract_ocr import (
+from app.ingestion.orc.tesseract_orc import (
     extract_text_from_image
 )
 

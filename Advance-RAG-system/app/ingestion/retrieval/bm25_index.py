@@ -1,13 +1,22 @@
 import os
 import pickle
+
 from pathlib import Path
+from typing import List
 
 from rank_bm25 import BM25Okapi
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
 
 
 class BM25Indexer:
+
+    documents: List = []
+
+    tokenized_docs: List = []
+
+    bm25: BM25Okapi | None = None
 
     def __init__(self):
 
@@ -17,40 +26,64 @@ class BM25Indexer:
 
         self.bm25 = None
 
-        # storage path
         self.storage_path = (
-            
             BASE_DIR / "storage" / "bm25" / "bm25_store.pkl"
         )
 
-        # create folder if not exists
         os.makedirs(
             os.path.dirname(self.storage_path),
             exist_ok=True
         )
 
-        # auto load existing bm25
         self.load()
 
     def add_documents(self, chunks):
 
-        texts = [
-            chunk.page_content
-            for chunk in chunks
-        ]
+        texts = []
 
-        self.documents.extend(chunks)
+        valid_chunks = []
 
-        self.tokenized_docs.extend([
+        for chunk in chunks:
+
+            text = chunk.page_content.strip()
+
+            # skip empty chunks
+            if not text:
+                continue
+
+            texts.append(text)
+
+            valid_chunks.append(chunk)
+
+    # no valid text
+        if not texts:
+            return
+
+        self.documents.extend(
+        valid_chunks
+        )
+
+        tokenized = [
+
             text.lower().split()
+
             for text in texts
-        ])
+
+            if text.strip()
+    ]
+
+        # no valid tokens
+        if not tokenized:
+            return
+
+        self.tokenized_docs.extend(
+            tokenized
+    )
 
         self.bm25 = BM25Okapi(
             self.tokenized_docs
-        )
+    )
 
-        # save after adding docs
         self.save()
 
     def search(
@@ -77,14 +110,18 @@ class BM25Indexer:
         )
 
         return [
+
             chunk
+
             for chunk, _ in ranked[:top_k]
         ]
 
     def save(self):
 
         data = {
+
             "documents": self.documents,
+
             "tokenized_docs": self.tokenized_docs
         }
 
@@ -93,7 +130,10 @@ class BM25Indexer:
             "wb"
         ) as f:
 
-            pickle.dump(data, f)
+            pickle.dump(
+                data,
+                f
+            )
 
     def load(self):
 
@@ -102,23 +142,36 @@ class BM25Indexer:
         ):
             return
 
-        with open(
-            self.storage_path,
-            "rb"
-        ) as f:
+        if os.path.getsize(
+            self.storage_path
+        ) == 0:
+            return
 
-            data = pickle.load(f)
+        try:
 
-        self.documents = data[
-            "documents"
-        ]
+            with open(
+                self.storage_path,
+                "rb"
+            ) as f:
 
-        self.tokenized_docs = data[
-            "tokenized_docs"
-        ]
+                data = pickle.load(f)
 
-        if self.tokenized_docs:
+            self.documents = data[
+                "documents"
+            ]
 
-            self.bm25 = BM25Okapi(
-                self.tokenized_docs
+            self.tokenized_docs = data[
+                "tokenized_docs"
+            ]
+
+            if self.tokenized_docs:
+
+                self.bm25 = BM25Okapi(
+                    self.tokenized_docs
+                )
+
+        except Exception as e:
+
+            print(
+                f"BM25 load failed: {e}"
             )

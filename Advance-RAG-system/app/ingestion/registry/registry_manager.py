@@ -29,7 +29,7 @@ class RegistryManager:
     def mark_processed(file_path:str,file_hash:str):
         conn = get_connection()
         cursor = conn.cursor()
-        cursor.execute('INSERT INTO file_registry (file_path,file_hash) VALUES (?,?)',(file_path,file_hash))
+        cursor.execute('''INSERT OR IGNORE INTO file_registry (file_path,file_hash) VALUES (?,?)''',(file_path,file_hash))
         conn.commit()
         conn.close()
 #Read about it how it works and how to use it in the main.py file

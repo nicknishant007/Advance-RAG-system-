@@ -6,7 +6,7 @@ CONFIG_PATH = "configs/ingestion.yaml"
 with open(CONFIG_PATH, 'r') as file:
     config = yaml.safe_load(file)
 
-DATA_DIR = config['data_directory']
+DATA_DIR = config['data_dir']
 
 SUPPORTED_FORMATS = set(config['supported_extensions'])
 
