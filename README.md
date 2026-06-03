@@ -1,158 +1,475 @@
-# Advanced Hybrid RAG System
+# 🚀 Advance RAG System
 
-## Overview
+A production-style Retrieval-Augmented Generation (RAG) system built using LangChain, Qdrant, BM25, MMR, Cross-Encoder Reranking, and LLMs.
 
-Advanced Hybrid RAG System is a Retrieval-Augmented Generation (RAG) application that combines semantic search and keyword search to provide accurate, context-aware answers from a collection of documents.
-
-The system processes PDFs and other documents through an ingestion pipeline, generates vector embeddings, stores them in Qdrant, builds a BM25 index for keyword retrieval, and uses a hybrid retrieval strategy to fetch the most relevant context before generating responses using an LLM.
+The system supports document ingestion, hybrid retrieval, intelligent reranking, and grounded response generation from user-provided knowledge bases.
 
 ---
 
-## Features
+# ✨ Features
 
-* Document ingestion pipeline
-* PDF text extraction and cleaning
-* Metadata generation
-* Recursive chunking
-* Dense vector embeddings
-* Qdrant vector database integration
-* BM25 keyword retrieval
-* Hybrid retrieval (Semantic + BM25)
-* Maximum Marginal Relevance (MMR) reranking
-* Cross-encoder reranking
-* Streaming LLM responses
-* File registry with SQLite
-* Incremental ingestion using file hashing
-* LangSmith tracing and observability
-
----
-
-## Architecture
-
-Document Upload
-↓
-Text Extraction
-↓
-Text Cleaning
-↓
-Metadata Generation
-↓
-Chunking
-↓
-Embedding Generation
-↓
-├── Qdrant (Dense Retrieval)
-└── BM25 (Sparse Retrieval)
-↓
-Hybrid Retrieval
-↓
-MMR Reranking
-↓
-Cross-Encoder Reranking
-↓
-LLM Generation
-↓
-Final Answer
+- PDF Document Ingestion
+- Multi-threaded Processing Pipeline
+- Automatic Metadata Generation
+- Recursive Text Chunking
+- Dense Vector Embeddings
+- Local Qdrant Vector Database
+- BM25 Sparse Retrieval
+- Hybrid Search (Dense + Sparse)
+- MMR (Maximal Marginal Relevance) Diversification
+- Cross-Encoder Reranking
+- Duplicate Document Detection using File Hashing
+- Streaming LLM Responses
+- LangSmith Observability & Tracing
+- Local-First Architecture
 
 ---
 
-## Tech Stack
+# 🏗️ System Architecture
 
-### Backend
+```text
+                 ┌──────────────────┐
+                 │   PDF Documents   │
+                 └─────────┬────────┘
+                           │
+                           ▼
+                 ┌──────────────────┐
+                 │ Text Extraction  │
+                 └─────────┬────────┘
+                           │
+                           ▼
+                 ┌──────────────────┐
+                 │ Text Cleaning    │
+                 └─────────┬────────┘
+                           │
+                           ▼
+                 ┌──────────────────┐
+                 │ Metadata Builder │
+                 └─────────┬────────┘
+                           │
+                           ▼
+                 ┌──────────────────┐
+                 │ Recursive Chunk  │
+                 └─────────┬────────┘
+                           │
+                           ▼
+                 ┌──────────────────┐
+                 │ BGE Embeddings   │
+                 └─────────┬────────┘
+                           │
+          ┌────────────────┴───────────────┐
+          │                                │
+          ▼                                ▼
+ ┌─────────────────┐             ┌─────────────────┐
+ │ Qdrant VectorDB │             │   BM25 Index    │
+ └─────────────────┘             └─────────────────┘
 
-* Python
 
-### Retrieval
-
-* Qdrant
-* BM25 (rank-bm25)
-
-### Embeddings
-
-* Sentence Transformers
-
-### LLM
-
-* Mistral AI
-
-### Frameworks
-
-* LangChain
-* LangSmith
-
-### Database
-
-* SQLite
+                   USER QUERY
+                         │
+                         ▼
+                Query Embedding
+                         │
+          ┌──────────────┴──────────────┐
+          │                             │
+          ▼                             ▼
+   Dense Retrieval              Sparse Retrieval
+      Top 15                        Top 7
+          │                             │
+          ▼                             │
+        MMR                             │
+      Top 8                             │
+          │                             │
+          └──────────────┬──────────────┘
+                         ▼
+                 Merge & Deduplicate
+                         │
+                         ▼
+                 Cross Encoder
+                   Reranker
+                    Top 5
+                         │
+                         ▼
+                       LLM
+                         │
+                         ▼
+                  Final Response
+```
 
 ---
 
-## Retrieval Pipeline
+# ⚙️ Technology Stack
 
-The retrieval system uses a hybrid search strategy:
+## Retrieval
 
-### Semantic Search
+- Qdrant
+- BM25
+- MMR
 
-Dense embeddings are generated for both documents and user queries. Qdrant performs vector similarity search to retrieve semantically relevant chunks.
+## Embeddings
 
-### Keyword Search
+- BAAI/bge-small-en-v1.5
 
-BM25 retrieves chunks containing exact keyword matches.
+## Reranking
 
-### Hybrid Fusion
+- cross-encoder/ms-marco-MiniLM-L-6-v2
 
-Results from both retrieval methods are combined to improve recall.
+## Framework
 
-### MMR Reranking
+- LangChain
 
-Maximum Marginal Relevance removes redundant chunks and increases context diversity.
+## Monitoring
 
-### Cross-Encoder Reranking
+- LangSmith
 
-A reranker scores retrieved chunks and selects the most relevant context for the LLM.
+## Database
 
----
+- SQLite
+- Qdrant
 
-## Incremental Ingestion
+## LLMs
 
-The system avoids reprocessing previously ingested files.
-
-Each file:
-
-* Generates a SHA-256 hash
-* Stores hash in SQLite registry
-* Checks registry before ingestion
-
-This significantly reduces processing time during repeated ingestion runs.
+- Gemini 2.5 Flash
+- Mistral Large (Supported)
 
 ---
 
-## Running the Project
+# 📂 Project Structure
 
-### Install Dependencies
+```text
+app/
+│
+├── ingestion/
+│   ├── extractor/
+│   ├── chunking/
+│   ├── embedding/
+│   ├── retrieval/
+│   ├── registry/
+│   ├── vectordb/
+│   └── pipeline/
+│
+├── generation/
+│   ├── llm.py
+│   ├── prompt_builder.py
+│   ├── response_generator.py
+│   └── rag_pipeline.py
+│
+storage/
+│
+├── qdrant_data/
+├── bm25/
+└── registry.db
+│
+main.py
+```
+
+---
+
+# 🔄 Ingestion Pipeline
+
+Each document follows the workflow below:
+
+```text
+PDF
+ ↓
+Extract Text
+ ↓
+Clean Text
+ ↓
+Generate Metadata
+ ↓
+Chunk Document
+ ↓
+Generate Embeddings
+ ↓
+Store in Qdrant
+ ↓
+Store in BM25
+ ↓
+Mark as Processed
+```
+
+---
+
+# 🔍 Retrieval Pipeline
+
+The retrieval system uses Hybrid Search.
+
+## Dense Retrieval
+
+Vector similarity search from Qdrant.
+
+```text
+Query
+ ↓
+Embedding
+ ↓
+Top 15 Dense Chunks
+```
+
+---
+
+## MMR Diversification
+
+Removes redundant dense chunks.
+
+```text
+15 Dense Chunks
+ ↓
+MMR
+ ↓
+8 Diverse Chunks
+```
+
+---
+
+## Sparse Retrieval
+
+Keyword-based BM25 retrieval.
+
+```text
+Query
+ ↓
+BM25
+ ↓
+Top 7 Sparse Chunks
+```
+
+---
+
+## Cross Encoder Reranking
+
+Final relevance optimization.
+
+```text
+8 MMR Chunks
+ +
+7 BM25 Chunks
+ ↓
+Cross Encoder
+ ↓
+Top 5 Chunks
+```
+
+---
+
+# 🛡️ Duplicate Document Protection
+
+To avoid reprocessing the same files:
+
+```text
+File
+ ↓
+SHA256 Hash
+ ↓
+Registry Check
+ ↓
+Already Processed?
+ ↓
+YES → Skip
+NO  → Process
+```
+
+Benefits:
+
+- Prevents duplicate embeddings
+- Faster ingestion
+- Reduced storage usage
+- Consistent indexing
+
+---
+
+# 🚀 Performance Optimizations
+
+Several optimizations were introduced during development.
+
+## SQLite Concurrency Fix
+
+Enabled:
+
+```python
+PRAGMA journal_mode=WAL;
+```
+
+Benefits:
+
+- Eliminated database locking
+- Improved multi-threaded ingestion
+
+---
+
+## Hybrid Retrieval Optimization
+
+### Old Architecture
+
+```text
+Dense (15)
++
+BM25 (15)
+↓
+Embed Again
+↓
+MMR
+↓
+Rerank
+```
+
+Problems:
+
+- Duplicate embeddings
+- High latency
+- Shape mismatch issues
+- Additional embedding overhead
+
+---
+
+### New Architecture
+
+```text
+Dense (15)
+↓
+MMR (8)
+
+BM25 (7)
+
+Merge
+↓
+Rerank (5)
+```
+
+Benefits:
+
+- Lower latency
+- Reduced embedding calls
+- Cleaner retrieval flow
+- Better retrieval diversity
+- Simpler MMR implementation
+
+---
+
+# 📈 Latency Improvements
+
+Measured using LangSmith tracing.
+
+## Before Optimization
+
+| Query | Latency |
+|---------|---------|
+| Run 1 | 48.52s |
+| Run 2 | 45.37s |
+
+Average:
+
+```text
+~47 Seconds
+```
+
+---
+
+## After Optimization
+
+| Query | Latency |
+|---------|---------|
+| Run 1 | 2.18s |
+| Run 2 | 2.26s |
+| Run 3 | 1.86s |
+
+Average:
+
+```text
+~2 Seconds
+```
+
+### Improvement
+
+```text
+47s → 2s
+≈ 95% Latency Reduction
+```
+
+---
+
+# ▶️ Running the Project
+
+## Clone Repository
+
+```bash
+git clone <your-repo-url>
+cd Advance-RAG-system
+```
+
+---
+
+## Create Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+Activate:
+
+### Windows
+
+```bash
+.venv\Scripts\activate
+```
+
+### Linux / Mac
+
+```bash
+source .venv/bin/activate
+```
+
+---
+
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run Ingestion
+or
+
+```bash
+uv sync
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file:
+
+```env
+GOOGLE_API_KEY=your_api_key
+LANGCHAIN_API_KEY=your_langsmith_key
+LANGCHAIN_TRACING_V2=true
+LANGCHAIN_PROJECT=Advance-RAG-System
+```
+
+---
+
+## Run Ingestion
 
 ```bash
 python main.py
 ```
 
-Select:
+Choose:
 
 ```text
 1. Run Ingestion
 ```
 
-### Start Chat
+---
+
+## Start Chat
 
 ```bash
 python main.py
 ```
 
-Select:
+Choose:
 
 ```text
 2. Start RAG Chat
@@ -160,20 +477,66 @@ Select:
 
 ---
 
-## Future Improvements
+# 📊 Observability
 
-* Metadata filtering
-* Query caching
-* Parent-child retrieval
-* Context compression
-* Multi-vector retrieval
-* GPU acceleration
-* Hybrid score fusion
-* Agentic RAG workflows
-* Cloud deployment (Azure / AWS)
+LangSmith is integrated for:
+
+- Tracing
+- Latency Monitoring
+- Token Usage Tracking
+- Retrieval Debugging
+- Performance Evaluation
+- Prompt Inspection
 
 ---
 
-## Project Goal
+# 🔮 Future Improvements
 
-This project demonstrates the implementation of a production-style Hybrid Retrieval-Augmented Generation system using modern retrieval techniques, vector databases, reranking strategies, and observability tooling.
+- Reciprocal Rank Fusion (RRF)
+- Hybrid Score Fusion
+- Query Expansion
+- Parent Document Retrieval
+- Context Compression
+- Multi-Vector Retrieval
+- Azure Blob Storage Integration
+- Distributed Qdrant Deployment
+- Automated Evaluation Pipelines
+- Multi-modal Retrieval
+
+---
+
+# 💡 Example Query Flow
+
+```text
+User Question
+      ↓
+Generate Query Embedding
+      ↓
+Dense Retrieval (15)
+      ↓
+MMR (8)
+      ↓
+BM25 Retrieval (7)
+      ↓
+Merge Results
+      ↓
+Cross Encoder Rerank
+      ↓
+Top 5 Context Chunks
+      ↓
+LLM Generation
+      ↓
+Final Answer
+```
+
+---
+
+# 👨‍💻 Author
+
+**Nishant Kumar**
+
+Built as a deep dive into modern Retrieval-Augmented Generation systems, hybrid search, vector databases, reranking, observability, and production-grade AI retrieval pipelines.
+
+---
+
+## ⭐ If you found this project useful, consider starring the repository.
