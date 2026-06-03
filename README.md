@@ -490,21 +490,6 @@ LangSmith is integrated for:
 
 ---
 
-# 🔮 Future Improvements
-
-- Reciprocal Rank Fusion (RRF)
-- Hybrid Score Fusion
-- Query Expansion
-- Parent Document Retrieval
-- Context Compression
-- Multi-Vector Retrieval
-- Azure Blob Storage Integration
-- Distributed Qdrant Deployment
-- Automated Evaluation Pipelines
-- Multi-modal Retrieval
-
----
-
 # 💡 Example Query Flow
 
 ```text
