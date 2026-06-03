@@ -1,6 +1,6 @@
 # 🚀 Advance RAG System
 
-A production-style Retrieval-Augmented Generation (RAG) system built using LangChain, Qdrant, BM25, MMR, Cross-Encoder Reranking, and LLMs.
+A production-style Retrieval-Augmented Generation (RAG) system built using LangChain,LangSmith, Qdrant,Semantic search, BM25, MMR, Cross-Encoder Reranking, and LLMs.
 
 The system supports document ingestion, hybrid retrieval, intelligent reranking, and grounded response generation from user-provided knowledge bases.
 
