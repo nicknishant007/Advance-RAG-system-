@@ -1,0 +1,1009 @@
+{
+    "hit_rate": 0.99,
+    "recall_at_5": 0.99,
+    "mrr": 0.8995000000000001,
+    "average_latency": 1.285994312763214,
+    "total_questions": 100,
+    "results": [
+        {
+            "question": "What are the magic numbers in the nuclear shell model?",
+            "expected_source": "data/incoming\\Week7.pdf",
+            "source_match": true,
+            "best_similarity": 0.3607,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 16.26699733734131
+        },
+        {
+            "question": "What experimental evidence suggests the existence of shell closures in nuclei?",
+            "expected_source": "data/incoming\\Week7.pdf",
+            "source_match": true,
+            "best_similarity": 0.1202,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.8964619636535645
+        },
+        {
+            "question": "Why is the mean potential concept used in nuclear shell theory?",
+            "expected_source": "data/incoming\\Week7.pdf",
+            "source_match": true,
+            "best_similarity": 0.218,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.9258725643157959
+        },
+        {
+            "question": "Why are many-body interactions difficult to treat directly in nuclei?",
+            "expected_source": "data/incoming\\Week7.pdf",
+            "source_match": true,
+            "best_similarity": 0.0439,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1320140361785889
+        },
+        {
+            "question": "What assumption is made about the nuclear potential in the shell model?",
+            "expected_source": "data/incoming\\Week7.pdf",
+            "source_match": true,
+            "best_similarity": 0.1012,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.5553884506225586
+        },
+        {
+            "question": "What is the magnetic moment of an even-even nucleus in its ground state?",
+            "expected_source": "data/incoming\\Week8.pdf",
+            "source_match": true,
+            "best_similarity": 0.1563,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1277081966400146
+        },
+        {
+            "question": "Why do even-even nuclei have spin-parity 0+ in the ground state?",
+            "expected_source": "data/incoming\\Week8.pdf",
+            "source_match": true,
+            "best_similarity": 0.0799,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 0.5,
+            "latency": 1.014618158340454
+        },
+        {
+            "question": "Which nucleon determines the properties of an odd-A nucleus?",
+            "expected_source": "data/incoming\\Week8.pdf",
+            "source_match": true,
+            "best_similarity": 0.0788,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.9665701389312744
+        },
+        {
+            "question": "How is the magnetic moment of an odd-A nucleus expressed?",
+            "expected_source": "data/incoming\\Week8.pdf",
+            "source_match": true,
+            "best_similarity": 0.0839,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.8316631317138672
+        },
+        {
+            "question": "What are the g-factor values for protons and neutrons used in magnetic moment calculations?",
+            "expected_source": "data/incoming\\Week8.pdf",
+            "source_match": true,
+            "best_similarity": 0.0355,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.8682277202606201
+        },
+        {
+            "question": "Define electric current.",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.2789,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.6735649108886719
+        },
+        {
+            "question": "What is electric potential?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.1111,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.208395004272461
+        },
+        {
+            "question": "What is the relationship between power, voltage and current?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0398,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.9635710716247559
+        },
+        {
+            "question": "Why is the circuit concept useful compared to field theory?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.1183,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.7834086418151855
+        },
+        {
+            "question": "What is the basic unit of electric charge?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0965,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.8108642101287842
+        },
+        {
+            "question": "How is current related to charge?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0471,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.8809821605682373
+        },
+        {
+            "question": "What is the purpose of an electrical circuit?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0912,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.8757424354553223
+        },
+        {
+            "question": "Name some methods used to generate electrical energy.",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0325,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.7773327827453613
+        },
+        {
+            "question": "What are poles of a transfer function?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0322,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 0.5,
+            "latency": 1.3055970668792725
+        },
+        {
+            "question": "What are zeros of a transfer function?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0498,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 0.3333333333333333,
+            "latency": 1.0908176898956299
+        },
+        {
+            "question": "What is pole-zero cancellation?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0856,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1842677593231201
+        },
+        {
+            "question": "Why is Pade approximation used in control systems?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.1206,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.5890181064605713
+        },
+        {
+            "question": "How is frequency response obtained from a transfer function?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0615,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 0.3333333333333333,
+            "latency": 1.216722011566162
+        },
+        {
+            "question": "How can MATLAB be used to generate a Nyquist plot?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.1025,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.4607632160186768
+        },
+        {
+            "question": "How can MATLAB be used to generate a Bode plot?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0146,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.3620400428771973
+        },
+        {
+            "question": "State Kirchhoff's Current Law.",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0629,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.0266714096069336
+        },
+        {
+            "question": "State Kirchhoff's Voltage Law.",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0778,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1596498489379883
+        },
+        {
+            "question": "What is the difference between branch currents and loop currents?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0528,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.7532432079315186
+        },
+        {
+            "question": "How are network equations formulated on the loop basis?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0778,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.9278490543365479
+        },
+        {
+            "question": "How are network equations formulated on the node basis?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.068,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.9137203693389893
+        },
+        {
+            "question": "What is network duality?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0426,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1382081508636475
+        },
+        {
+            "question": "What are general network equations?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0838,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.092761516571045
+        },
+        {
+            "question": "How are determinants used in network analysis?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0939,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.9428145885467529
+        },
+        {
+            "question": "What is resistive network analysis?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0667,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1071884632110596
+        },
+        {
+            "question": "What is an active element convention?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.05,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.8357100486755371
+        },
+        {
+            "question": "What is network topology?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0642,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1664743423461914
+        },
+        {
+            "question": "Explain the dot convention for coupled circuits.",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.105,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.9163670539855957
+        },
+        {
+            "question": "What is a first-order differential equation in circuit analysis?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.1015,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.923417329788208
+        },
+        {
+            "question": "What is meant by a circuit time constant?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0252,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.91646409034729
+        },
+        {
+            "question": "What is the principle of superposition?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0762,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.9303596019744873
+        },
+        {
+            "question": "How does a zero affect a Bode magnitude plot?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0793,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 0.3333333333333333,
+            "latency": 1.4244840145111084
+        },
+        {
+            "question": "How does a pole affect a Bode magnitude plot?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.034,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 0.3333333333333333,
+            "latency": 1.4376301765441895
+        },
+        {
+            "question": "What is meant by a slope of minus twenty dB per decade?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0348,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.223478078842163
+        },
+        {
+            "question": "How does a second-order pole affect a Bode magnitude plot?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0429,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 0.5,
+            "latency": 1.0610544681549072
+        },
+        {
+            "question": "How does a second-order zero affect a Bode magnitude plot?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0455,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.0365006923675537
+        },
+        {
+            "question": "What is the significance of the damping ratio in a second-order system?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0663,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 0.5,
+            "latency": 1.0731284618377686
+        },
+        {
+            "question": "How does decreasing damping ratio affect resonance?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0613,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 0.5,
+            "latency": 0.9646086692810059
+        },
+        {
+            "question": "How are real-axis intersections determined in Nyquist analysis?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0348,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.9880032539367676
+        },
+        {
+            "question": "How are imaginary-axis intersections determined in Nyquist analysis?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0405,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.0718040466308594
+        },
+        {
+            "question": "What is the phase response of a transfer function?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0722,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1153225898742676
+        },
+        {
+            "question": "How are initial conditions evaluated in electrical networks?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0584,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.871732234954834
+        },
+        {
+            "question": "Why are capacitor voltages continuous at switching instants?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.1191,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.8766167163848877
+        },
+        {
+            "question": "Why are inductor currents continuous at switching instants?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.043,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.8209853172302246
+        },
+        {
+            "question": "What is the standard solution form of a second-order differential equation?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.1111,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.9039831161499023
+        },
+        {
+            "question": "What is a homogeneous differential equation?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.1319,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.7918941974639893
+        },
+        {
+            "question": "What is a nonhomogeneous differential equation?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.1191,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.7994165420532227
+        },
+        {
+            "question": "What is the method of undetermined coefficients?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.2151,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.8789157867431641
+        },
+        {
+            "question": "What is the Laplace transform?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.1078,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.392315149307251
+        },
+        {
+            "question": "Why is the Laplace transform useful in circuit analysis?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.1161,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.9033210277557373
+        },
+        {
+            "question": "What is partial fraction expansion?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0877,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.9772641658782959
+        },
+        {
+            "question": "What is Heaviside's expansion theorem?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0883,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.185382604598999
+        },
+        {
+            "question": "What is the initial value theorem?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0499,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.2407610416412354
+        },
+        {
+            "question": "What is the final value theorem?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0652,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.3513498306274414
+        },
+        {
+            "question": "What is the unit step function?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0806,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.2668828964233398
+        },
+        {
+            "question": "What is the convolution integral?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.111,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1331510543823242
+        },
+        {
+            "question": "What is a Nyquist plot?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0745,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 0.5,
+            "latency": 1.5082101821899414
+        },
+        {
+            "question": "Why are Nyquist plots useful in control systems?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0592,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.4153728485107422
+        },
+        {
+            "question": "What is a Bode magnitude plot?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0472,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1925268173217773
+        },
+        {
+            "question": "What is a Bode phase plot?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0487,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1111881732940674
+        },
+        {
+            "question": "What information does a pole provide about system behavior?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0679,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.3645241260528564
+        },
+        {
+            "question": "What information does a zero provide about system behavior?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0309,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 0.3333333333333333,
+            "latency": 1.5119009017944336
+        },
+        {
+            "question": "Why are pole locations important in control system design?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0228,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.0885374546051025
+        },
+        {
+            "question": "What is frequency response analysis?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0767,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 0.2,
+            "latency": 0.866248369216919
+        },
+        {
+            "question": "How are poles determined using MATLAB?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0438,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1913566589355469
+        },
+        {
+            "question": "How are zeros determined using MATLAB?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0448,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.207991600036621
+        },
+        {
+            "question": "What is a Fourier series?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.031,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1049773693084717
+        },
+        {
+            "question": "What is the complex exponential form of the Fourier series?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.1168,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.081207513809204
+        },
+        {
+            "question": "What is a frequency spectrum?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0628,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.3273375034332275
+        },
+        {
+            "question": "What is the Fourier transform?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0474,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1682963371276855
+        },
+        {
+            "question": "How are Fourier transforms related to Laplace transforms?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0309,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.9345004558563232
+        },
+        {
+            "question": "What is the concept of complex frequency?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0876,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1462316513061523
+        },
+        {
+            "question": "What is transform impedance?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0712,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1557188034057617
+        },
+        {
+            "question": "What is transform admittance?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0997,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.4669458866119385
+        },
+        {
+            "question": "What is Thevenin's theorem?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0519,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.3691022396087646
+        },
+        {
+            "question": "What is Norton's theorem?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0712,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 2.2606539726257324
+        },
+        {
+            "question": "What is a transfer function in network analysis?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0448,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.6384594440460205
+        },
+        {
+            "question": "What are poles and zeros of a network function?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0794,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.4622759819030762
+        },
+        {
+            "question": "How do poles and zeros affect time-domain behavior?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0702,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1190505027770996
+        },
+        {
+            "question": "What is resonance in network analysis?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.0776,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.7548604011535645
+        },
+        {
+            "question": "What is circuit bandwidth?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.1031,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1115238666534424
+        },
+        {
+            "question": "How do poles and zeros determine sinusoidal network functions?",
+            "expected_source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf",
+            "source_match": true,
+            "best_similarity": 0.1667,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.1770992279052734
+        },
+        {
+            "question": "What is the relationship between damping ratio and resonance peak?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0824,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 0.5,
+            "latency": 0.9850897789001465
+        },
+        {
+            "question": "How does a zero affect phase response?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0699,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 0.25,
+            "latency": 1.3196649551391602
+        },
+        {
+            "question": "How does a pole affect phase response?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0367,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.3711497783660889
+        },
+        {
+            "question": "Why are Bode plots useful in system analysis?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0626,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 1.3890395164489746
+        },
+        {
+            "question": "What happens to the phase of an integrator?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": false,
+            "best_similarity": 0.0251,
+            "hit": 0,
+            "recall": 0,
+            "mrr": 0,
+            "latency": 1.0745935440063477
+        },
+        {
+            "question": "What is the purpose of the Nyquist stability criterion?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0767,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 0.3333333333333333,
+            "latency": 1.7097904682159424
+        },
+        {
+            "question": "How is a time delay represented in frequency response analysis?",
+            "expected_source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf",
+            "source_match": true,
+            "best_similarity": 0.0365,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.9169631004333496
+        },
+        {
+            "question": "What evidence supports zero magnetic moment in even-even nuclei?",
+            "expected_source": "data/incoming\\Week8.pdf",
+            "source_match": true,
+            "best_similarity": 0.0472,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.9785542488098145
+        },
+        {
+            "question": "Why are magic numbers important in nuclear shell theory?",
+            "expected_source": "data/incoming\\Week7.pdf",
+            "source_match": true,
+            "best_similarity": 0.0692,
+            "hit": 1,
+            "recall": 1,
+            "mrr": 1.0,
+            "latency": 0.8089935779571533
+        }
+    ]
+}

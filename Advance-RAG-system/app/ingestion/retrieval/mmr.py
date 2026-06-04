@@ -13,7 +13,7 @@ class MMRRetriever:
         candidate_embeddings,
         candidate_chunks,
         top_k=8,
-        lambda_param=0.7
+        lambda_param=0.5
     ):
 
         if not candidate_chunks:

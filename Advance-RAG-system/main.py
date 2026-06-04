@@ -1,4 +1,3 @@
-
 from app.ingestion.registry.registry_manager import (
     RegistryManager
 )
