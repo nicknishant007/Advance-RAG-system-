@@ -1,0 +1,702 @@
+[
+  {
+    "question": "What are the magic numbers in the nuclear shell model?",
+    "expected_chunk": "The nucleon numbers for which the shells close are 2, 8, 20, 28, 50, 82, 126. These are called magic numbers and represent the effects of filled major shells.",
+    "expected_metadata": {
+      "source": "data/incoming\\Week7.pdf"
+    }
+  },
+  {
+    "question": "What experimental evidence suggests the existence of shell closures in nuclei?",
+    "expected_chunk": "The sudden and discontinuous behavior occurs at the same proton and neutron numbers. These observations indicate shell structure and wider spacing of energy levels beyond a closed shell.",
+    "expected_metadata": {
+      "source": "data/incoming\\Week7.pdf"
+    }
+  },
+  {
+    "question": "Why is the mean potential concept used in nuclear shell theory?",
+    "expected_chunk": "Any nucleon in a nucleus is assumed to move in a common potential produced by all other nucleons. This average field is called the mean potential.",
+    "expected_metadata": {
+      "source": "data/incoming\\Week7.pdf"
+    }
+  },
+  {
+    "question": "Why are many-body interactions difficult to treat directly in nuclei?",
+    "expected_chunk": "For a nucleus containing many nucleons there can be two-body, three-body and higher-order interactions, making the complete Hamiltonian difficult to write and solve.",
+    "expected_metadata": {
+      "source": "data/incoming\\Week7.pdf"
+    }
+  },
+  {
+    "question": "What assumption is made about the nuclear potential in the shell model?",
+    "expected_chunk": "We assume a single-particle potential and approximate it by a central potential. Every nucleon experiences the same average potential.",
+    "expected_metadata": {
+      "source": "data/incoming\\Week7.pdf"
+    }
+  },
+  {
+    "question": "What is the magnetic moment of an even-even nucleus in its ground state?",
+    "expected_chunk": "Paired nucleons give zero spin and zero magnetic moment. Therefore the total magnetic moment of an even-even nucleus in its ground state is zero.",
+    "expected_metadata": {
+      "source": "data/incoming\\Week8.pdf"
+    }
+  },
+  {
+    "question": "Why do even-even nuclei have spin-parity 0+ in the ground state?",
+    "expected_chunk": "Nucleons are paired in each energy level. Since each pair contributes zero total angular momentum, the ground state has Iπ = 0+.",
+    "expected_metadata": {
+      "source": "data/incoming\\Week8.pdf"
+    }
+  },
+  {
+    "question": "Which nucleon determines the properties of an odd-A nucleus?",
+    "expected_chunk": "There is one unpaired neutron or proton. This last unpaired nucleon determines the magnetic and angular momentum properties of the nucleus.",
+    "expected_metadata": {
+      "source": "data/incoming\\Week8.pdf"
+    }
+  },
+  {
+    "question": "How is the magnetic moment of an odd-A nucleus expressed?",
+    "expected_chunk": "The magnetic moment is given by μz = (glLz + gsSz)μN/ħ, where orbital and spin contributions are combined.",
+    "expected_metadata": {
+      "source": "data/incoming\\Week8.pdf"
+    }
+  },
+  {
+    "question": "What are the g-factor values for protons and neutrons used in magnetic moment calculations?",
+    "expected_chunk": "For protons gs = 5.5856912 and gl = 1. For neutrons gs = -3.8260837 and gl = 0.",
+    "expected_metadata": {
+      "source": "data/incoming\\Week8.pdf"
+    }
+  },
+  {
+    "question": "Define electric current.",
+    "expected_chunk": "Electric current may be defined as the time rate of net motion of electric charge across a cross-sectional boundary.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is electric potential?",
+    "expected_chunk": "The quantity energy per unit charge, or work per unit charge, is called potential or voltage.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is the relationship between power, voltage and current?",
+    "expected_chunk": "Power is the product of potential and current. Thus p = vi.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "Why is the circuit concept useful compared to field theory?",
+    "expected_chunk": "The circuit concept favors analysis in terms of voltage and current from which charge, fields, energy and power can be computed.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is the basic unit of electric charge?",
+    "expected_chunk": "The basic unit of charge is the charge of the electron. The electron has a charge of 1.601 × 10^-19 coulomb.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "How is current related to charge?",
+    "expected_chunk": "Current is given by i = dq/dt, representing the rate of change of charge with time.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is the purpose of an electrical circuit?",
+    "expected_chunk": "A circuit functions to transfer and transform energy. Energy transfer is accomplished by charge transfer.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "Name some methods used to generate electrical energy.",
+    "expected_chunk": "Electrical energy may be produced by magnetic induction, voltaic methods, electrostatic methods and other techniques such as photoelectric conversion.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What are poles of a transfer function?",
+    "expected_chunk": "Poles are values of s that make the denominator of the transfer function equal to zero.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "What are zeros of a transfer function?",
+    "expected_chunk": "Zeros are values of s that make the numerator of the transfer function equal to zero.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "What is pole-zero cancellation?",
+    "expected_chunk": "The pole and zero at s = -1 cancel each other, reducing their effect on the overall transfer function.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "Why is Pade approximation used in control systems?",
+    "expected_chunk": "A first-order Pade approximation is used to represent exponential delay terms and make them suitable for analysis.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "How is frequency response obtained from a transfer function?",
+    "expected_chunk": "Frequency response is obtained by substituting s = jω into the transfer function and simplifying the resulting expression.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "How can MATLAB be used to generate a Nyquist plot?",
+    "expected_chunk": "MATLAB uses the nyquist() command to generate Nyquist diagrams for transfer functions.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "How can MATLAB be used to generate a Bode plot?",
+    "expected_chunk": "MATLAB uses the bode() command to obtain magnitude and phase plots of a transfer function.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+ {
+    "question": "State Kirchhoff's Current Law.",
+    "expected_chunk": "Kirchhoff's Current Law states that the algebraic sum of currents entering and leaving a node is zero.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "State Kirchhoff's Voltage Law.",
+    "expected_chunk": "Kirchhoff's Voltage Law states that the algebraic sum of voltages around any closed loop is zero.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is the difference between branch currents and loop currents?",
+    "expected_chunk": "Branch currents are currents assigned to individual branches while loop currents are hypothetical currents assigned to independent loops for circuit analysis.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "How are network equations formulated on the loop basis?",
+    "expected_chunk": "Loop analysis formulates equilibrium equations by applying Kirchhoff's Voltage Law around independent loops of the network.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "How are network equations formulated on the node basis?",
+    "expected_chunk": "Node analysis formulates equations using Kirchhoff's Current Law at network nodes and node voltages as unknowns.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is network duality?",
+    "expected_chunk": "Duality establishes a correspondence between two networks where current and voltage relationships are interchanged while preserving mathematical structure.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What are general network equations?",
+    "expected_chunk": "General network equations provide a systematic representation of network behavior using currents, voltages and element relationships.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "How are determinants used in network analysis?",
+    "expected_chunk": "Determinants may be used to solve simultaneous network equations and obtain unknown currents or voltages.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is resistive network analysis?",
+    "expected_chunk": "Resistive network analysis studies circuits containing resistive elements by applying network equations and circuit laws.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is an active element convention?",
+    "expected_chunk": "Active element conventions define reference directions and sign conventions for power-producing elements in electrical networks.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is network topology?",
+    "expected_chunk": "Network topology describes the geometric arrangement and interconnection of elements independent of their actual values.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "Explain the dot convention for coupled circuits.",
+    "expected_chunk": "The dot convention indicates the relative polarity of mutually coupled coils and determines the sign of mutual inductance terms.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is a first-order differential equation in circuit analysis?",
+    "expected_chunk": "A first-order differential equation contains only the first derivative of the dependent variable and commonly arises in RC and RL circuits.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is meant by a circuit time constant?",
+    "expected_chunk": "The time constant characterizes the rate at which a first-order circuit responds to changes and approaches steady state.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is the principle of superposition?",
+    "expected_chunk": "The principle of superposition states that the total response of a linear system equals the sum of the responses produced by each independent source acting alone.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "How does a zero affect a Bode magnitude plot?",
+    "expected_chunk": "A zero increases the slope of the magnitude plot by plus twenty decibels per decade after the break frequency.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "How does a pole affect a Bode magnitude plot?",
+    "expected_chunk": "A pole decreases the slope of the magnitude plot by twenty decibels per decade after the corner frequency.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "What is meant by a slope of minus twenty dB per decade?",
+    "expected_chunk": "A slope of minus twenty decibels per decade indicates that the magnitude decreases by twenty decibels whenever frequency increases by a factor of ten.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "How does a second-order pole affect a Bode magnitude plot?",
+    "expected_chunk": "A second-order pole contributes a slope change of minus forty decibels per decade beyond its natural frequency.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "How does a second-order zero affect a Bode magnitude plot?",
+    "expected_chunk": "A second-order zero contributes a slope increase of plus forty decibels per decade beyond its break frequency.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "What is the significance of the damping ratio in a second-order system?",
+    "expected_chunk": "The damping ratio determines the transient behavior, oscillation level and resonance characteristics of a second-order system.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "How does decreasing damping ratio affect resonance?",
+    "expected_chunk": "Lower damping ratios produce a larger resonant peak and a more oscillatory system response.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "How are real-axis intersections determined in Nyquist analysis?",
+    "expected_chunk": "Real-axis intersections occur when the imaginary part of the frequency response becomes zero.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "How are imaginary-axis intersections determined in Nyquist analysis?",
+    "expected_chunk": "Imaginary-axis intersections occur when the real part of the frequency response becomes zero.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "What is the phase response of a transfer function?",
+    "expected_chunk": "The phase response represents the phase angle of the frequency response as a function of frequency.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "How are initial conditions evaluated in electrical networks?",
+    "expected_chunk": "A procedure for evaluating initial conditions uses the known behavior of capacitors and inductors together with network equations at the switching instant.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "Why are capacitor voltages continuous at switching instants?",
+    "expected_chunk": "The voltage across a capacitor cannot change instantaneously because that would require an infinite current.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "Why are inductor currents continuous at switching instants?",
+    "expected_chunk": "The current through an inductor cannot change instantaneously because that would require an infinite voltage.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is the standard solution form of a second-order differential equation?",
+    "expected_chunk": "The solution of a second-order differential equation depends on the roots of the characteristic equation and may be overdamped, critically damped or underdamped.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is a homogeneous differential equation?",
+    "expected_chunk": "A homogeneous differential equation has zero forcing function and its solution is determined entirely by the characteristic equation.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is a nonhomogeneous differential equation?",
+    "expected_chunk": "A nonhomogeneous differential equation contains an excitation term and its complete solution consists of complementary and particular solutions.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is the method of undetermined coefficients?",
+    "expected_chunk": "The method of undetermined coefficients assumes a trial particular solution whose coefficients are determined by substitution into the differential equation.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is the Laplace transform?",
+    "expected_chunk": "The Laplace transformation converts functions of time into functions of the complex frequency variable s, simplifying the solution of differential equations.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "Why is the Laplace transform useful in circuit analysis?",
+    "expected_chunk": "The Laplace transform converts differential equations into algebraic equations that are easier to solve.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is partial fraction expansion?",
+    "expected_chunk": "Partial fraction expansion expresses a rational function as a sum of simpler fractions to facilitate inverse Laplace transformation.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is Heaviside's expansion theorem?",
+    "expected_chunk": "Heaviside's expansion theorem provides a direct method for obtaining coefficients in partial fraction expansions for distinct poles.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is the initial value theorem?",
+    "expected_chunk": "The initial value theorem relates the initial value of a time-domain function to the limit of sF(s) as s approaches infinity.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is the final value theorem?",
+    "expected_chunk": "The final value theorem relates the steady-state value of a function to the limit of sF(s) as s approaches zero.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is the unit step function?",
+    "expected_chunk": "The unit step function changes from zero to one at a specified time and is widely used to model switching operations.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is the convolution integral?",
+    "expected_chunk": "The convolution integral determines the output of a linear system by combining the input signal with the system impulse response.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is a Nyquist plot?",
+    "expected_chunk": "A Nyquist plot is a graphical representation of the frequency response in the complex plane using real and imaginary components.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "Why are Nyquist plots useful in control systems?",
+    "expected_chunk": "Nyquist diagrams provide information about frequency response and stability characteristics of dynamic systems.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "What is a Bode magnitude plot?",
+    "expected_chunk": "A Bode magnitude plot represents the logarithmic magnitude of a transfer function as a function of logarithmic frequency.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "What is a Bode phase plot?",
+    "expected_chunk": "A Bode phase plot represents the phase angle of the transfer function as a function of logarithmic frequency.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "What information does a pole provide about system behavior?",
+    "expected_chunk": "Pole locations strongly influence system stability, transient response and frequency response characteristics.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "What information does a zero provide about system behavior?",
+    "expected_chunk": "Zeros influence the shape of the transient and frequency responses and affect magnitude and phase characteristics.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "Why are pole locations important in control system design?",
+    "expected_chunk": "Pole locations determine stability, damping characteristics and the speed of response of a control system.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "What is frequency response analysis?",
+    "expected_chunk": "Frequency response analysis studies the response of a system to sinusoidal inputs over a range of frequencies.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "How are poles determined using MATLAB?",
+    "expected_chunk": "MATLAB uses the pole() command to calculate the pole locations of a transfer function.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "How are zeros determined using MATLAB?",
+    "expected_chunk": "MATLAB uses the zero() command to calculate the zero locations of a transfer function.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "What is a Fourier series?",
+    "expected_chunk": "A Fourier series represents a periodic waveform as a sum of sinusoidal components having different amplitudes and phases.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is the complex exponential form of the Fourier series?",
+    "expected_chunk": "The complex exponential form expresses a periodic function as a summation of complex exponentials with discrete frequencies.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is a frequency spectrum?",
+    "expected_chunk": "The frequency spectrum describes the distribution of signal amplitude and phase as a function of frequency.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is the Fourier transform?",
+    "expected_chunk": "The Fourier transform extends Fourier analysis to nonperiodic signals and provides a continuous-frequency representation.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "How are Fourier transforms related to Laplace transforms?",
+    "expected_chunk": "The Fourier transform may be viewed as a special case of the Laplace transform evaluated along the imaginary axis.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is the concept of complex frequency?",
+    "expected_chunk": "Complex frequency is represented by the variable s and combines exponential growth or decay with sinusoidal behavior.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is transform impedance?",
+    "expected_chunk": "Transform impedance is the ratio of transformed voltage to transformed current in the Laplace domain.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is transform admittance?",
+    "expected_chunk": "Transform admittance is the reciprocal of transform impedance and relates transformed current to transformed voltage.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is Thevenin's theorem?",
+    "expected_chunk": "Thevenin's theorem states that a linear network can be replaced by an equivalent voltage source in series with an equivalent impedance.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is Norton's theorem?",
+    "expected_chunk": "Norton's theorem states that a linear network can be replaced by an equivalent current source in parallel with an equivalent impedance.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is a transfer function in network analysis?",
+    "expected_chunk": "A transfer function relates the Laplace transform of an output quantity to the Laplace transform of an input quantity.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What are poles and zeros of a network function?",
+    "expected_chunk": "Poles are values of s that make the denominator zero while zeros are values of s that make the numerator zero.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "How do poles and zeros affect time-domain behavior?",
+    "expected_chunk": "The locations of poles and zeros determine transient response, stability and the shape of the time-domain waveform.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is resonance in network analysis?",
+    "expected_chunk": "Resonance occurs when reactive effects balance and the network exhibits a maximum or minimum response at a specific frequency.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is circuit bandwidth?",
+    "expected_chunk": "Bandwidth is the range of frequencies over which the response remains above a specified level relative to its peak value.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "How do poles and zeros determine sinusoidal network functions?",
+    "expected_chunk": "The magnitude and phase response of a network function can be expressed directly in terms of its poles and zeros.",
+    "expected_metadata": {
+      "source": "data/incoming\\Network_Analysis_by_M_E_Van_Valkenburg.pdf"
+    }
+  },
+  {
+    "question": "What is the relationship between damping ratio and resonance peak?",
+    "expected_chunk": "As damping ratio decreases the resonance peak becomes larger and more pronounced in the frequency response.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "How does a zero affect phase response?",
+    "expected_chunk": "A zero contributes positive phase shift and increases the phase angle over a frequency range around its break frequency.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "How does a pole affect phase response?",
+    "expected_chunk": "A pole contributes negative phase shift and decreases the phase angle over a frequency range around its break frequency.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "Why are Bode plots useful in system analysis?",
+    "expected_chunk": "Bode plots provide a simple graphical method for studying gain, phase and frequency response characteristics.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "What happens to the phase of an integrator?",
+    "expected_chunk": "An ideal integrator contributes a constant phase lag of ninety degrees and a slope of minus twenty decibels per decade.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "What is the purpose of the Nyquist stability criterion?",
+    "expected_chunk": "The Nyquist criterion uses frequency response information to determine the stability of a closed-loop control system.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "How is a time delay represented in frequency response analysis?",
+    "expected_chunk": "Time delay introduces an exponential term and is often approximated using a Pade approximation for analysis purposes.",
+    "expected_metadata": {
+      "source": "data/incoming\\Automatic Control Systems, 9th Edition - Solutions Manual (Farid Golnaraghi, Benjamin C. Kuo) (Z-Libr-1.pdf"
+    }
+  },
+  {
+    "question": "What evidence supports zero magnetic moment in even-even nuclei?",
+    "expected_chunk": "Paired nucleons contribute equal and opposite magnetic moments, producing a net magnetic moment of zero in the ground state.",
+    "expected_metadata": {
+      "source": "data/incoming\\Week8.pdf"
+    }
+  },
+  {
+    "question": "Why are magic numbers important in nuclear shell theory?",
+    "expected_chunk": "Magic numbers correspond to closed shells and explain the enhanced stability observed for specific proton and neutron numbers.",
+    "expected_metadata": {
+      "source": "data/incoming\\Week7.pdf"
+    }
+  }
+]

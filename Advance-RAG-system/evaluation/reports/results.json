@@ -2,7 +2,7 @@
     "hit_rate": 0.99,
     "recall_at_5": 0.99,
     "mrr": 0.8995000000000001,
-    "average_latency": 1.285994312763214,
+    "average_latency": 1.7602069568634033,
     "total_questions": 100,
     "results": [
         {
@@ -13,7 +13,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 16.26699733734131
+            "latency": 28.68951988220215
         },
         {
             "question": "What experimental evidence suggests the existence of shell closures in nuclei?",
@@ -23,7 +23,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.8964619636535645
+            "latency": 1.1551423072814941
         },
         {
             "question": "Why is the mean potential concept used in nuclear shell theory?",
@@ -33,7 +33,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.9258725643157959
+            "latency": 0.9248199462890625
         },
         {
             "question": "Why are many-body interactions difficult to treat directly in nuclei?",
@@ -43,7 +43,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1320140361785889
+            "latency": 1.2721295356750488
         },
         {
             "question": "What assumption is made about the nuclear potential in the shell model?",
@@ -53,7 +53,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.5553884506225586
+            "latency": 1.832834243774414
         },
         {
             "question": "What is the magnetic moment of an even-even nucleus in its ground state?",
@@ -63,7 +63,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1277081966400146
+            "latency": 2.0106430053710938
         },
         {
             "question": "Why do even-even nuclei have spin-parity 0+ in the ground state?",
@@ -73,7 +73,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 0.5,
-            "latency": 1.014618158340454
+            "latency": 3.581838607788086
         },
         {
             "question": "Which nucleon determines the properties of an odd-A nucleus?",
@@ -83,7 +83,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.9665701389312744
+            "latency": 4.73888087272644
         },
         {
             "question": "How is the magnetic moment of an odd-A nucleus expressed?",
@@ -93,7 +93,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.8316631317138672
+            "latency": 3.593315362930298
         },
         {
             "question": "What are the g-factor values for protons and neutrons used in magnetic moment calculations?",
@@ -103,7 +103,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.8682277202606201
+            "latency": 1.1948459148406982
         },
         {
             "question": "Define electric current.",
@@ -113,7 +113,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.6735649108886719
+            "latency": 2.084547519683838
         },
         {
             "question": "What is electric potential?",
@@ -123,7 +123,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.208395004272461
+            "latency": 1.6457841396331787
         },
         {
             "question": "What is the relationship between power, voltage and current?",
@@ -133,7 +133,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.9635710716247559
+            "latency": 4.878257513046265
         },
         {
             "question": "Why is the circuit concept useful compared to field theory?",
@@ -143,7 +143,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.7834086418151855
+            "latency": 2.0205295085906982
         },
         {
             "question": "What is the basic unit of electric charge?",
@@ -153,7 +153,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.8108642101287842
+            "latency": 2.4584801197052
         },
         {
             "question": "How is current related to charge?",
@@ -163,7 +163,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.8809821605682373
+            "latency": 1.4560155868530273
         },
         {
             "question": "What is the purpose of an electrical circuit?",
@@ -173,7 +173,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.8757424354553223
+            "latency": 1.716404914855957
         },
         {
             "question": "Name some methods used to generate electrical energy.",
@@ -183,7 +183,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.7773327827453613
+            "latency": 2.276319980621338
         },
         {
             "question": "What are poles of a transfer function?",
@@ -193,7 +193,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 0.5,
-            "latency": 1.3055970668792725
+            "latency": 4.406446218490601
         },
         {
             "question": "What are zeros of a transfer function?",
@@ -203,7 +203,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 0.3333333333333333,
-            "latency": 1.0908176898956299
+            "latency": 2.201781988143921
         },
         {
             "question": "What is pole-zero cancellation?",
@@ -213,7 +213,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1842677593231201
+            "latency": 2.258122444152832
         },
         {
             "question": "Why is Pade approximation used in control systems?",
@@ -223,7 +223,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.5890181064605713
+            "latency": 2.4862937927246094
         },
         {
             "question": "How is frequency response obtained from a transfer function?",
@@ -233,7 +233,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 0.3333333333333333,
-            "latency": 1.216722011566162
+            "latency": 1.6732332706451416
         },
         {
             "question": "How can MATLAB be used to generate a Nyquist plot?",
@@ -243,7 +243,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.4607632160186768
+            "latency": 2.065269708633423
         },
         {
             "question": "How can MATLAB be used to generate a Bode plot?",
@@ -253,7 +253,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.3620400428771973
+            "latency": 2.1649391651153564
         },
         {
             "question": "State Kirchhoff's Current Law.",
@@ -263,7 +263,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.0266714096069336
+            "latency": 1.4722466468811035
         },
         {
             "question": "State Kirchhoff's Voltage Law.",
@@ -273,7 +273,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1596498489379883
+            "latency": 1.3152775764465332
         },
         {
             "question": "What is the difference between branch currents and loop currents?",
@@ -283,7 +283,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.7532432079315186
+            "latency": 0.7119913101196289
         },
         {
             "question": "How are network equations formulated on the loop basis?",
@@ -293,7 +293,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.9278490543365479
+            "latency": 1.0080246925354004
         },
         {
             "question": "How are network equations formulated on the node basis?",
@@ -303,7 +303,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.9137203693389893
+            "latency": 0.9109108448028564
         },
         {
             "question": "What is network duality?",
@@ -313,7 +313,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1382081508636475
+            "latency": 1.4535624980926514
         },
         {
             "question": "What are general network equations?",
@@ -323,7 +323,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.092761516571045
+            "latency": 1.2977819442749023
         },
         {
             "question": "How are determinants used in network analysis?",
@@ -333,7 +333,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.9428145885467529
+            "latency": 1.0440959930419922
         },
         {
             "question": "What is resistive network analysis?",
@@ -343,7 +343,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1071884632110596
+            "latency": 1.2170326709747314
         },
         {
             "question": "What is an active element convention?",
@@ -353,7 +353,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.8357100486755371
+            "latency": 1.1026396751403809
         },
         {
             "question": "What is network topology?",
@@ -363,7 +363,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1664743423461914
+            "latency": 1.2370307445526123
         },
         {
             "question": "Explain the dot convention for coupled circuits.",
@@ -373,7 +373,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.9163670539855957
+            "latency": 0.7795572280883789
         },
         {
             "question": "What is a first-order differential equation in circuit analysis?",
@@ -383,7 +383,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.923417329788208
+            "latency": 0.9087741374969482
         },
         {
             "question": "What is meant by a circuit time constant?",
@@ -393,7 +393,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.91646409034729
+            "latency": 1.4129841327667236
         },
         {
             "question": "What is the principle of superposition?",
@@ -403,7 +403,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.9303596019744873
+            "latency": 1.1043779850006104
         },
         {
             "question": "How does a zero affect a Bode magnitude plot?",
@@ -413,7 +413,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 0.3333333333333333,
-            "latency": 1.4244840145111084
+            "latency": 1.6838078498840332
         },
         {
             "question": "How does a pole affect a Bode magnitude plot?",
@@ -423,7 +423,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 0.3333333333333333,
-            "latency": 1.4376301765441895
+            "latency": 1.6122856140136719
         },
         {
             "question": "What is meant by a slope of minus twenty dB per decade?",
@@ -433,7 +433,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.223478078842163
+            "latency": 1.644216537475586
         },
         {
             "question": "How does a second-order pole affect a Bode magnitude plot?",
@@ -443,7 +443,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 0.5,
-            "latency": 1.0610544681549072
+            "latency": 1.226506233215332
         },
         {
             "question": "How does a second-order zero affect a Bode magnitude plot?",
@@ -453,7 +453,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.0365006923675537
+            "latency": 1.130805492401123
         },
         {
             "question": "What is the significance of the damping ratio in a second-order system?",
@@ -463,7 +463,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 0.5,
-            "latency": 1.0731284618377686
+            "latency": 1.1961472034454346
         },
         {
             "question": "How does decreasing damping ratio affect resonance?",
@@ -473,7 +473,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 0.5,
-            "latency": 0.9646086692810059
+            "latency": 1.2139289379119873
         },
         {
             "question": "How are real-axis intersections determined in Nyquist analysis?",
@@ -483,7 +483,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.9880032539367676
+            "latency": 1.1091344356536865
         },
         {
             "question": "How are imaginary-axis intersections determined in Nyquist analysis?",
@@ -493,7 +493,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.0718040466308594
+            "latency": 1.2278237342834473
         },
         {
             "question": "What is the phase response of a transfer function?",
@@ -503,7 +503,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1153225898742676
+            "latency": 1.3438313007354736
         },
         {
             "question": "How are initial conditions evaluated in electrical networks?",
@@ -513,7 +513,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.871732234954834
+            "latency": 0.9869058132171631
         },
         {
             "question": "Why are capacitor voltages continuous at switching instants?",
@@ -523,7 +523,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.8766167163848877
+            "latency": 0.995326042175293
         },
         {
             "question": "Why are inductor currents continuous at switching instants?",
@@ -533,7 +533,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.8209853172302246
+            "latency": 0.8625948429107666
         },
         {
             "question": "What is the standard solution form of a second-order differential equation?",
@@ -543,7 +543,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.9039831161499023
+            "latency": 1.1108009815216064
         },
         {
             "question": "What is a homogeneous differential equation?",
@@ -553,7 +553,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.7918941974639893
+            "latency": 0.9666650295257568
         },
         {
             "question": "What is a nonhomogeneous differential equation?",
@@ -563,7 +563,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.7994165420532227
+            "latency": 0.8892478942871094
         },
         {
             "question": "What is the method of undetermined coefficients?",
@@ -573,7 +573,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.8789157867431641
+            "latency": 1.2736804485321045
         },
         {
             "question": "What is the Laplace transform?",
@@ -583,7 +583,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.392315149307251
+            "latency": 1.5726239681243896
         },
         {
             "question": "Why is the Laplace transform useful in circuit analysis?",
@@ -593,7 +593,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.9033210277557373
+            "latency": 1.0002193450927734
         },
         {
             "question": "What is partial fraction expansion?",
@@ -603,7 +603,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.9772641658782959
+            "latency": 1.054187297821045
         },
         {
             "question": "What is Heaviside's expansion theorem?",
@@ -613,7 +613,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.185382604598999
+            "latency": 1.2616965770721436
         },
         {
             "question": "What is the initial value theorem?",
@@ -623,7 +623,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.2407610416412354
+            "latency": 1.266498327255249
         },
         {
             "question": "What is the final value theorem?",
@@ -633,7 +633,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.3513498306274414
+            "latency": 1.3254468441009521
         },
         {
             "question": "What is the unit step function?",
@@ -643,7 +643,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.2668828964233398
+            "latency": 1.2376227378845215
         },
         {
             "question": "What is the convolution integral?",
@@ -653,7 +653,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1331510543823242
+            "latency": 1.4463090896606445
         },
         {
             "question": "What is a Nyquist plot?",
@@ -663,7 +663,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 0.5,
-            "latency": 1.5082101821899414
+            "latency": 1.7334098815917969
         },
         {
             "question": "Why are Nyquist plots useful in control systems?",
@@ -673,7 +673,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.4153728485107422
+            "latency": 1.6245346069335938
         },
         {
             "question": "What is a Bode magnitude plot?",
@@ -683,7 +683,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1925268173217773
+            "latency": 1.4276633262634277
         },
         {
             "question": "What is a Bode phase plot?",
@@ -693,7 +693,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1111881732940674
+            "latency": 1.2238550186157227
         },
         {
             "question": "What information does a pole provide about system behavior?",
@@ -703,7 +703,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.3645241260528564
+            "latency": 1.4435017108917236
         },
         {
             "question": "What information does a zero provide about system behavior?",
@@ -713,7 +713,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 0.3333333333333333,
-            "latency": 1.5119009017944336
+            "latency": 1.8729958534240723
         },
         {
             "question": "Why are pole locations important in control system design?",
@@ -723,7 +723,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.0885374546051025
+            "latency": 1.3896722793579102
         },
         {
             "question": "What is frequency response analysis?",
@@ -733,7 +733,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 0.2,
-            "latency": 0.866248369216919
+            "latency": 1.006101369857788
         },
         {
             "question": "How are poles determined using MATLAB?",
@@ -743,7 +743,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1913566589355469
+            "latency": 1.4841773509979248
         },
         {
             "question": "How are zeros determined using MATLAB?",
@@ -753,7 +753,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.207991600036621
+            "latency": 1.3892078399658203
         },
         {
             "question": "What is a Fourier series?",
@@ -763,7 +763,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1049773693084717
+            "latency": 1.0294151306152344
         },
         {
             "question": "What is the complex exponential form of the Fourier series?",
@@ -773,7 +773,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.081207513809204
+            "latency": 0.9859042167663574
         },
         {
             "question": "What is a frequency spectrum?",
@@ -783,7 +783,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.3273375034332275
+            "latency": 0.9972310066223145
         },
         {
             "question": "What is the Fourier transform?",
@@ -793,7 +793,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1682963371276855
+            "latency": 1.0007400512695312
         },
         {
             "question": "How are Fourier transforms related to Laplace transforms?",
@@ -803,7 +803,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.9345004558563232
+            "latency": 0.864008903503418
         },
         {
             "question": "What is the concept of complex frequency?",
@@ -813,7 +813,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1462316513061523
+            "latency": 1.178652286529541
         },
         {
             "question": "What is transform impedance?",
@@ -823,7 +823,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1557188034057617
+            "latency": 1.1824665069580078
         },
         {
             "question": "What is transform admittance?",
@@ -833,7 +833,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.4669458866119385
+            "latency": 1.157700777053833
         },
         {
             "question": "What is Thevenin's theorem?",
@@ -843,7 +843,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.3691022396087646
+            "latency": 1.202519178390503
         },
         {
             "question": "What is Norton's theorem?",
@@ -853,7 +853,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 2.2606539726257324
+            "latency": 1.7442967891693115
         },
         {
             "question": "What is a transfer function in network analysis?",
@@ -863,7 +863,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.6384594440460205
+            "latency": 1.4922494888305664
         },
         {
             "question": "What are poles and zeros of a network function?",
@@ -873,7 +873,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.4622759819030762
+            "latency": 1.1830356121063232
         },
         {
             "question": "How do poles and zeros affect time-domain behavior?",
@@ -883,7 +883,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1190505027770996
+            "latency": 1.0198652744293213
         },
         {
             "question": "What is resonance in network analysis?",
@@ -893,7 +893,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.7548604011535645
+            "latency": 1.4357445240020752
         },
         {
             "question": "What is circuit bandwidth?",
@@ -903,7 +903,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1115238666534424
+            "latency": 1.4335048198699951
         },
         {
             "question": "How do poles and zeros determine sinusoidal network functions?",
@@ -913,7 +913,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.1770992279052734
+            "latency": 1.5087032318115234
         },
         {
             "question": "What is the relationship between damping ratio and resonance peak?",
@@ -923,7 +923,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 0.5,
-            "latency": 0.9850897789001465
+            "latency": 1.142526626586914
         },
         {
             "question": "How does a zero affect phase response?",
@@ -933,7 +933,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 0.25,
-            "latency": 1.3196649551391602
+            "latency": 1.2799220085144043
         },
         {
             "question": "How does a pole affect phase response?",
@@ -943,7 +943,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.3711497783660889
+            "latency": 1.1883435249328613
         },
         {
             "question": "Why are Bode plots useful in system analysis?",
@@ -953,7 +953,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 1.3890395164489746
+            "latency": 1.1371054649353027
         },
         {
             "question": "What happens to the phase of an integrator?",
@@ -963,7 +963,7 @@
             "hit": 0,
             "recall": 0,
             "mrr": 0,
-            "latency": 1.0745935440063477
+            "latency": 0.9425082206726074
         },
         {
             "question": "What is the purpose of the Nyquist stability criterion?",
@@ -973,7 +973,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 0.3333333333333333,
-            "latency": 1.7097904682159424
+            "latency": 1.418208122253418
         },
         {
             "question": "How is a time delay represented in frequency response analysis?",
@@ -983,7 +983,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.9169631004333496
+            "latency": 0.9549422264099121
         },
         {
             "question": "What evidence supports zero magnetic moment in even-even nuclei?",
@@ -993,7 +993,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.9785542488098145
+            "latency": 0.7290983200073242
         },
         {
             "question": "Why are magic numbers important in nuclear shell theory?",
@@ -1003,7 +1003,7 @@
             "hit": 1,
             "recall": 1,
             "mrr": 1.0,
-            "latency": 0.8089935779571533
+            "latency": 0.8158879280090332
         }
     ]
 }
