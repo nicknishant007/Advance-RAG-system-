@@ -1,5 +1,8 @@
 import time
 
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
+
 from difflib import (
     SequenceMatcher
 )
@@ -9,6 +12,8 @@ from app.ingestion.retrieval.retrieval_pipeline import (
 )
 
 
+
+
 class RetrievalEvaluator:
 
     def __init__(self):
@@ -16,6 +21,7 @@ class RetrievalEvaluator:
         self.pipeline = (
             RetrievalPipeline()
         )
+        self.model=SentenceTransformer("all-MiniLM-L6-v2")
 
     def evaluate_question(
         self,
@@ -76,22 +82,22 @@ class RetrievalEvaluator:
         # CHUNK SIMILARITY
         # ----------------------------------
 
-        best_similarity = 0
+        expected_embedding = self.model.encode(
+        [expected_chunk]
+        )
 
-        for chunk in chunks:
+        retrieved_embeddings = self.model.encode(
+        [chunk.page_content for chunk in chunks]
+        )
 
-            similarity = (
-                SequenceMatcher(
-                    None,
-                    expected_chunk.lower(),
-                    chunk.page_content.lower()
-                ).ratio()
-            )
+        similarities = cosine_similarity(
+        expected_embedding,
+        retrieved_embeddings
+        )[0]
 
-            best_similarity = max(
-                best_similarity,
-                similarity
-            )
+        best_similarity = float(
+        max(similarities)
+        )
 
         # ----------------------------------
         # HIT
@@ -146,15 +152,11 @@ class RetrievalEvaluator:
                 4
             ),
 
-            "hit":
-            hit,
+            "hit":hit,
 
-            "recall":
-            recall,
+            "recall":recall,
 
-            "mrr":
-            mrr,
+            "mrr":mrr,
 
-            "latency":
-            latency
+            "latency":latency
         }
