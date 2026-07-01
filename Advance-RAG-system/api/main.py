@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent   # goes up from api/ → project 
 sys.path.insert(0, str(ROOT))
 
 from fastapi import FastAPI
+from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
@@ -57,6 +58,10 @@ app.mount(
     StaticFiles(directory=str(ROOT / "frontend"), html=True),
     name="frontend",
 )
+#Frontend route to serve the index.html file
+@app.get("/", include_in_schema=False)
+async def frontend():
+    return FileResponse(ROOT / "frontend" / "index.html")
 
 # ── Register routers ──────────────────────────────────────────────────────────
 app.include_router(chat_router,   prefix="/chat",   tags=["Chat"])
