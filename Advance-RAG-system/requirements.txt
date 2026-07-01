@@ -9,3 +9,11 @@ beautifulsoup4
 langchain
 tqdm
 pyyaml
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+pydantic-settings
+aiofiles
+httpx
+requests
