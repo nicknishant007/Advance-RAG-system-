@@ -398,7 +398,7 @@ textarea::placeholder { color: #bbb9b4; }
   /* Hidden by default — toggled by .open class */
   transform: translateX(100%);
   transition: transform .28s ease;
-  position: relative;
+  position: relative;flex-shrink: 0;
 }
 .sources-panel.open { transform: translateX(0); }
 

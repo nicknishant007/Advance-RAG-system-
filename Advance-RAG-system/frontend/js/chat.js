@@ -141,11 +141,13 @@ const Chat = (() => {
    * @param {string} apiBase   Base URL of the FastAPI server e.g. 'http://localhost:8000'
    */
   async function send(question, apiBase) {
+    console.log("Chat.send() called", question);
     if (!question || isStreaming) return;
 
     isStreaming = true;
     App.setStatus('busy', 'Thinking…');
     App.setSendDisabled(true);
+
 
     // 1. Render user message
     appendBubble('user', escHtml(question));
