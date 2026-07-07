@@ -40,7 +40,7 @@
 const Sources = (() => {
 
   /* ── Panel open/close state ─────────────────────────────────────────────── */
-  let panelOpen = true;
+  let panelOpen = false;
 
   function togglePanel(forceOpen) {
     const panel  = document.getElementById('sourcesPanel');
@@ -151,8 +151,20 @@ const Sources = (() => {
   /* ── Init ────────────────────────────────────────────────────────────────── */
 
   function init() {
-    document.getElementById('sourcesBtn')
-      .addEventListener('click', () => togglePanel());
+    const panel = document.getElementById('sourcesPanel');
+    const btn = document.getElementById('sourcesBtn');
+
+    console.log('INIT PANEL:', panel);
+    console.log('INIT BUTTON:', btn);
+
+    panelOpen = true;
+
+    panel.classList.add('open');
+    btn.classList.add('active');
+
+    btn.addEventListener('click', () => togglePanel());
+
+    console.log('PANEL CLASSES:', panel.className);
   }
 
   return {
