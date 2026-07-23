@@ -185,7 +185,7 @@ main.py
 #RAW PIC
 <img src="images/pic3.jpg" width="700">
 #Dashboard
-<img src="images/dash.png" width="700">
+<img src="images/dash.jpg" width="700">
 ---
 
 # 🔄 Ingestion Pipeline
