@@ -182,7 +182,7 @@ storage/
 │
 main.py
 ```
-
+<img src="images/pic3.png" width="700">
 ---
 
 # 🔄 Ingestion Pipeline
