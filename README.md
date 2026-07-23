@@ -182,7 +182,10 @@ storage/
 │
 main.py
 ```
+#RAW PIC
 <img src="images/pic3.jpg" width="700">
+#Dashboard
+<img src="images/dash.png" width="700">
 ---
 
 # 🔄 Ingestion Pipeline
@@ -389,7 +392,8 @@ Average:
 ≈ 97.3% Latency Reduction
 ≈ 36x Faster Retrieval
 ```
-
+#Chat
+<img src="images/pic2.jpg" width="700">
 ---
 
 # 📊 Retrieval Evaluation
