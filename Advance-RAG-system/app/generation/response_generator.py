@@ -1,5 +1,6 @@
 from app.generation.llm import LLM
 from app.generation.prompt_builder import PromptBuilder
+from guardrails.output_guard import OutputGuard
 
 
 class ResponseGenerator:
@@ -12,7 +13,6 @@ class ResponseGenerator:
         print("=" * 120)
 
         print(f"\nQuestion: {query}")
-
         print(f"\nRetrieved Chunks: {len(retrieved_chunks)}")
 
         if not retrieved_chunks:
@@ -31,6 +31,10 @@ class ResponseGenerator:
                 print("\nContent:")
                 print(chunk.page_content)
 
+        # --------------------------------------------------------
+        # Build Context
+        # --------------------------------------------------------
+
         context = "\n\n".join(
             chunk.page_content
             for chunk in retrieved_chunks
@@ -41,10 +45,13 @@ class ResponseGenerator:
         print("=" * 120)
 
         print(context)
-
         print("\nContext Length:", len(context))
 
         print("=" * 120 + "\n")
+
+        # --------------------------------------------------------
+        # Build Chain
+        # --------------------------------------------------------
 
         prompt = PromptBuilder.build()
 
@@ -54,25 +61,78 @@ class ResponseGenerator:
 
         print("🚀 Sending prompt to Gemini...\n")
 
-        first_token = True
+        # --------------------------------------------------------
+        # Generate Complete Answer
+        # --------------------------------------------------------
 
-        for token in chain.stream(
-            {
-                "context": context,
-                "question": query,
-            }
-        ):
+        answer = ""
 
-            if token.content:
+        try:
+
+            first_token = True
+
+            for token in chain.stream(
+                {
+                    "context": context,
+                    "question": query,
+                }
+            ):
+
+                content = getattr(token, "content", None)
+
+                if not content:
+                    continue
 
                 if first_token:
-                    print("✅ Gemini started streaming.\n")
+                    print("✅ Gemini started generating.\n")
                     first_token = False
 
-                print(token.content, end="", flush=True)
+                print(content, end="", flush=True)
 
-                yield token.content
+                answer += content
 
-        print("\n\n" + "=" * 120)
+        except Exception as e:
+
+            print(f"\n❌ LLM Generation Failed: {e}")
+
+            raise
+
+        print("\n")
+
+        # --------------------------------------------------------
+        # Output Guard
+        # --------------------------------------------------------
+
+        safe, reason = OutputGuard.validate(
+            question=query,
+            answer=answer,
+            context=context,
+        )
+
+        if not safe:
+
+            print(f"❌ Output Guard Blocked Response")
+            print(f"Reason: {reason}")
+
+            answer = (
+                "I couldn't answer this question reliably using the retrieved "
+                "documents. Please try rephrasing your question or provide "
+                "more relevant documents."
+            )
+
+        else:
+
+            print("✅ Output Guard Passed")
+
+        # --------------------------------------------------------
+        # Stream Safe Response
+        # --------------------------------------------------------
+
+        print("\n🚀 Streaming response to client...\n")
+
+        for ch in answer:
+            yield ch
+
+        print("\n" + "=" * 120)
         print("✅ STREAM FINISHED")
         print("=" * 120)

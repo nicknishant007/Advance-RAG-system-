@@ -11,6 +11,7 @@ from fastapi.responses import JSONResponse, StreamingResponse
 from pydantic import BaseModel
 
 from api.services.rag_service import RAGService
+from guardrails.input_guard import InputGuard
 
 router = APIRouter()
 
@@ -35,6 +36,43 @@ def sse(data: dict):
     return f"data: {json.dumps(data, ensure_ascii=False)}\n\n"
 
 
+def validate_question(question: str):
+    """
+    Validate user input using Input Guardrail.
+
+    Returns:
+        None -> Question is safe.
+        JSONResponse -> Validation failed.
+    """
+
+    is_safe, reason = InputGuard.validate(question)
+
+    if not is_safe:
+
+        def blocked():
+
+            yield sse({
+                "type": "error",
+                "content": reason,
+            })
+
+            yield sse({
+                "type": "done",
+            })
+
+        return StreamingResponse(
+            blocked(),
+            media_type="text/event-stream",
+            headers={
+                "Cache-Control": "no-cache",
+                "Connection": "keep-alive",
+                "X-Accel-Buffering": "no",
+            },
+        )
+
+    return None
+
+
 # ============================================================
 # Stream Endpoint
 # ============================================================
@@ -44,13 +82,10 @@ async def stream_chat(req: ChatRequest):
 
     question = req.question.strip()
 
-    if not question:
-        return JSONResponse(
-            status_code=400,
-            content={
-                "detail": "Question cannot be empty."
-            }
-        )
+    error = validate_question(question)
+
+    if error:
+        return error
 
     def generate():
 
@@ -61,28 +96,19 @@ async def stream_chat(req: ChatRequest):
                 top_k=req.top_k,
             ):
 
-                if token is None:
-                    continue
-
-                if token == "":
+                if not token:
                     continue
 
                 yield sse({
-
                     "type": "token",
-
-                    "content": token
-
+                    "content": token,
                 })
 
             yield sse({
-
-                "type": "done"
-
+                "type": "done",
             })
 
         except GeneratorExit:
-            # Browser closed connection
             return
 
         except Exception as e:
@@ -90,29 +116,18 @@ async def stream_chat(req: ChatRequest):
             print(traceback.format_exc())
 
             yield sse({
-
                 "type": "error",
-
-                "content": str(e)
-
+                "content": str(e),
             })
 
     return StreamingResponse(
-
         generate(),
-
         media_type="text/event-stream",
-
         headers={
-
             "Cache-Control": "no-cache",
-
             "Connection": "keep-alive",
-
             "X-Accel-Buffering": "no",
-
-        }
-
+        },
     )
 
 
@@ -125,34 +140,21 @@ async def retrieve(req: ChatRequest):
 
     question = req.question.strip()
 
-    if not question:
+    error = validate_question(question)
 
-        return JSONResponse(
-
-            status_code=400,
-
-            content={
-
-                "detail": "Question cannot be empty."
-
-            }
-
-        )
+    if error:
+        return error
 
     try:
 
         docs = RAGService.retrieve_sources(
-
             question=question,
-
             top_k=req.top_k,
-
         )
 
         return JSONResponse({
-
-            "sources": docs
-
+            "success": True,
+            "sources": docs,
         })
 
     except Exception as e:
@@ -160,13 +162,9 @@ async def retrieve(req: ChatRequest):
         print(traceback.format_exc())
 
         return JSONResponse(
-
             status_code=500,
-
             content={
-
-                "detail": str(e)
-
-            }
-
+                "success": False,
+                "message": str(e),
+            },
         )
